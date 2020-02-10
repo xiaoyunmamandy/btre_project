@@ -149,3 +149,7 @@ EMAIL_HOST_USER = '1093804614@qq.com'
 EMAIL_HOST_PASSWORD = 'mdwawfsjysizibbf'
 EMAIL_USER_TLS = True
 
+try:
+    from .localsetting import *
+except ImportError:
+    pass
