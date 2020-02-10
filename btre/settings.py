@@ -150,6 +150,6 @@ EMAIL_HOST_PASSWORD = 'mdwawfsjysizibbf'
 EMAIL_USER_TLS = True
 
 try:
-    from .localsetting import *
+    from .local_settings import *
 except ImportError:
     pass
