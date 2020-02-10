@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '3$3-mwp)%v=c2r7k4o8$-2#u&l5&jvj-q2*+$c+_7!&l3!985+'
+# SECRET_KEY = '3$3-mwp)%v=c2r7k4o8$-2#u&l5&jvj-q2*+$c+_7!&l3!985+'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -79,16 +79,7 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
-        'USER': 'postgres',
-        'PASSWORD': '661213',
-        'HOST':'localhost'
-    }
-}
-
+# 
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -142,12 +133,6 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-#Email
-EMAIL_HOST = 'smtp.qq.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = '1093804614@qq.com'
-EMAIL_HOST_PASSWORD = 'mdwawfsjysizibbf'
-EMAIL_USER_TLS = True
 
 try:
     from .local_settings import *
